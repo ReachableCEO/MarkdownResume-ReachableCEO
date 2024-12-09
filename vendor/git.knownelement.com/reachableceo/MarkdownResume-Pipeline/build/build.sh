@@ -1,17 +1,17 @@
 #!/usr/bin/env bash
 
-export CandidateName="First Middle Last"
-export CandidatePhone="1 123 456 7890"
-export CandidateLocation="Place 1/Place 2"
-export CandidateEmail="candidate@domain.com"
-export CandidateOneLineSummary="Super awesome and stuff."
-export CandidateLinkedin="linkedin.com"
-export CandidateGithub="github.com"
-export CandidateLogo=""
-export CandidateTagline="Your.Tagline.Here."
+export CandidateName="Charles N Wyble"
+export CandidatePhone="**1 818 280 7059**"
+export CandidateLocation="Austin TX / Raleigh NC / Remote"
+export CandidateEmail="**reachableceo@reachableceo.com**"
+export CandidateOneLineSummary="Senior (**Staff level**) **System Engineer/SRE/Architect** with extensive Linux/Windows/Networking/Cyber security background and experience."
+export CandidateLinkedin="https://www.linkedin.com/in/charles-wyble-412007337/"
+export CandidateGithub="https://www.github.com/reachableceo"
+export CandidateLogo="D:/tsys/@ReachableCEO/ReachableCEO.png"
+export CandidateTagline="Tenacity. Velocity. Focus."
 export ResumeSourceCode="https://git.knownelement.com/reachableceo/MarkdownResume-Pipeline"
 export URLCOLOR="blue"
-export PAGEBACKGROUND="../vendor/git.knownelement.com/ExternalVendorCode/pandoc-latex-template/examples/page-background/backgrounds/background3.pdf"
+export PAGEBACKGROUND="../vendor/git.knownelement.com/ExternalVendorCode/pandoc-latex-template/examples/page-background/backgrounds/background5.pdf"
 
 ####################################################
 #DO NOT CHANGE ANYTHING BELOW THIS LINE
@@ -68,8 +68,8 @@ echo " " >> $JobBoardMarkdownOutputFile
 cat $BUILD_TEMP_DIR/ContactInfo-ClientSubmit.md >> $ClientSubmissionMarkdownOutputFile
 echo " " >> $ClientSubmissionMarkdownOutputFile
 
-echo "## Career Highlights" >> $JobBoardMarkdownOutputFile
-echo "## Career Highlights" >> $ClientSubmissionMarkdownOutputFile
+echo "## Highlights from my 22 year career" >> $JobBoardMarkdownOutputFile
+echo "## Highlights from my 22 year career" >> $ClientSubmissionMarkdownOutputFile
 
 cat ../Templates/SkillsAndProjects/Projects.md >> $JobBoardMarkdownOutputFile
 echo "\pagebreak" >> $JobBoardMarkdownOutputFile
