@@ -25,18 +25,18 @@ export PAGEBACKGROUND="../vendor/git.knownelement.com/ExternalVendorCode/pandoc-
 ############################################################
 
 readonly MO_PATH="bash ../vendor/git.knownelement.com/ExternalVendorCode/mo/mo"
-readonly BUILD_OUTPUT_DIR="../build-output"
+readonly BUILD_OUTPUT_DIR="D:\tsys\@ReachableCEO\resume.reachableceo.com"
 readonly BUILD_TEMP_DIR="../build-temp"
 readonly BUILDYAML_JOBBOARD="$BUILD_TEMP_DIR/JobBoard.yml"
 readonly BUILDYAML_CLIENTSUBMISSION="$BUILD_TEMP_DIR/ClientSubmission.yml"
 
 echo "Cleaning up from previous runs..."
 
-JobBoardMarkdownOutputFile="$BUILD_OUTPUT_DIR/job-board/Resume.md"
-JobBoardPDFOutputFile="$BUILD_OUTPUT_DIR/job-board/Resume.pdf"
-JobBoardMSWordOutputFile="$BUILD_OUTPUT_DIR/job-board/Resume.doc"
+JobBoardMarkdownOutputFile="$BUILD_TEMP_DIR/job-board/Resume.md"
+JobBoardPDFOutputFile="$BUILD_OUTPUT_DIR/job-board/CharlesNWyble-Resume.pdf"
+JobBoardMSWordOutputFile="$BUILD_OUTPUT_DIR/job-board/CharlesNWyble-Resume.doc"
 
-ClientSubmissionMarkdownOutputFile="$BUILD_OUTPUT_DIR/client-submission/Resume.md"
+ClientSubmissionMarkdownOutputFile="$BUILD_TEMP_DIR/client-submission/Resume.md"
 ClientSubmissionPDFOutputFile="$BUILD_OUTPUT_DIR/client-submission//Resume.pdf"
 ClientSubmissionMSWordOutputFile="$BUILD_OUTPUT_DIR/client-submission/Resume.doc"
 
