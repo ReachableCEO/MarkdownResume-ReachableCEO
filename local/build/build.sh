@@ -10,10 +10,10 @@
 # Contact info
 ########################
 
-export CandidateName="First Middle Last"
-export CandidatePhone="1 123 456 7890"
-export CandidateLocation="Place 1/Place 2"
-export CandidateEmail="candidate@domain.com"
+export CandidateName="Charles N Wyble"
+export CandidatePhone="1 818 280 7059"
+export CandidateLocation="Austin TX / Raleigh NC / Remote"
+export CandidateEmail="reachableceo@reachableceo.com"
 
 ########################
 # Profile information
@@ -21,14 +21,14 @@ export CandidateEmail="candidate@domain.com"
 
 export CandidateOneLineSummary="Super awesome and stuff."
 export CandidateLinkedin="https://www.linkedin.com/"
-export CandidateGithub="https://www.github.com/"
-export CandidateTagline="Your.Tagline.Here."
+export CandidateGithub="https://www.github.com/reachableceo"
+export CandidateTagline="Tenacity. Velocity. Focus."
 
 ########################
 # Formatting options
 ########################
 
-export CandidateLogo=""
+export CandidateLogo="D:\tsys\@ReachableCEO\ReachableCEO.png"
 export SourceCode="https://git.knownelement.com/reachableceo/MarkdownResume-Pipeline"
 export URLCOLOR="blue"
 export PAGEBACKGROUND="../vendor/git.knownelement.com/ExternalVendorCode/pandoc-latex-template/examples/page-background/backgrounds/background3.pdf"
@@ -40,33 +40,33 @@ export PAGEBACKGROUND="../vendor/git.knownelement.com/ExternalVendorCode/pandoc-
 export CandidatePreferredContactMethod="Email will get the fastest response."
 export CandidateWorkAuthorization="US Citizen"
 export CandidateEmploymentStatus="Not currently employed"
-export CandidateCurrentLocation="City,State,Country etc"
-export CandidateCurrentTimezone="Timezone"
-export CandidateWorkableTimezones="Timezones"
-export CandidateInterviewAvailability="Sometime"
-export CandidateStartAvailability="Sometime"
-export CandidateHighestEducation="Some education level"
-export CandidateGraduationYear="Graduation year"
-export CandidateSchoolName="School name"
-export CandidateSchoolLocation="School location"
-export CandidateLastProject="Last project"
-export CandidateDOB="MM/DD"
-export CandidateTotalExperience="epoch"
+export CandidateCurrentLocation="Austin, TX"
+export CandidateCurrentTimezone="CST"
+export CandidateWorkableTimezones="PST/CST/EST"
+export CandidateInterviewAvailability="Immediate"
+export CandidateStartAvailability="Two weeks"
+export CandidateHighestEducation="High School"
+export CandidateGraduationYear="2002"
+export CandidateSchoolName="Osborne Christian School"
+export CandidateSchoolLocation="Los Angeles, CA"
+export CandidateLastProject="CDK Global October 2024"
+export CandidateDOB="09/14"
+export CandidateTotalExperience="22 years"
 
 
 ########################
 #Compensation targets
 ########################
 
-export CandidateRelocationNetMinimumAmount="1,987.11"
+export CandidateRelocationNetMinimumAmount="5,000.00"
 
-export CandidateRateSheetRemoteW2HourlyMinimum="\$12.34"
-export CandidateRateSheetRemoteW2AnnualMinimum="\$123,456.00"
-export CandidateRateSheetRemote1099HourlyMinimum="\$56.78"
+export CandidateRateSheetRemoteW2HourlyMinimum="\$60.00"
+export CandidateRateSheetRemoteW2AnnualMinimum="\$120,000.00"
+export CandidateRateSheetRemote1099HourlyMinimum="\$75.00"
 
-export CandidateRateSheetRemoteW2HourlyPrefer="\$34.56"
-export CandidateRateSheetRemoteW2AnnualPrefer="\$321,987.00"
-export CandidateRateSheetRemote1099HourlyPrefer="\$78.90"
+export CandidateRateSheetRemoteW2HourlyPrefer="\$70.00"
+export CandidateRateSheetRemoteW2AnnualPrefer="\$140,000.00"
+export CandidateRateSheetRemote1099HourlyPrefer="\$85.00"
 
 ####################################################
 #DO NOT CHANGE ANYTHING BELOW THIS LINE
@@ -76,23 +76,23 @@ export CandidateRateSheetRemote1099HourlyPrefer="\$78.90"
 # Setup globals
 ############################################################
 
-readonly MO_PATH="bash ../vendor/git.knownelement.com/ExternalVendorCode/mo/mo"
-readonly BUILD_OUTPUT_DIR="../build-output"
+readonly MO_PATH="bash ../../vendor/git.knownelement.com/reachableceo/MarkdownResume-Pipeline/vendor/git.knownelement.com/ExternalVendorCode/mo/mo"
+readonly BUILD_OUTPUT_DIR="D:/tsys/@ReachableCEO/resume.reachableceo.com/"
 readonly BUILD_TEMP_DIR="../build-temp"
 readonly BUILDYAML_JOBBOARD="$BUILD_TEMP_DIR/JobBoard.yml"
 readonly BUILDYAML_CLIENTSUBMISSION="$BUILD_TEMP_DIR/ClientSubmission.yml"
 readonly BUILDYAML_CANDIDATEINFOSHEET="$BUILD_TEMP_DIR/CandidateInfoSheet.yml"
 
-CandidateInfoSheetMarkdownOutputFile="$BUILD_OUTPUT_DIR/CandidateInfoSheet.md"
-CandidateInfoSheetPDFOutputFIle="$BUILD_OUTPUT_DIR/CandidateInfoSheet.pdf"
+CandidateInfoSheetMarkdownOutputFile="$BUILD_TEMP_DIR/CandidateInfoSheet.md"
+CandidateInfoSheetPDFOutputFIle="$BUILD_OUTPUT_DIR/recruiter/CandidateInfoSheet.pdf"
 
-JobBoardMarkdownOutputFile="$BUILD_OUTPUT_DIR/job-board/Resume.md"
-JobBoardPDFOutputFile="$BUILD_OUTPUT_DIR/job-board/Resume.pdf"
-JobBoardMSWordOutputFile="$BUILD_OUTPUT_DIR/job-board/Resume.doc"
+JobBoardMarkdownOutputFile="$BUILD_TEMP_DIR/JobBoard-Resume.md"
+JobBoardPDFOutputFile="$BUILD_OUTPUT_DIR/job-board/CharlesNWyble-Resume.pdf"
+JobBoardMSWordOutputFile="$BUILD_OUTPUT_DIR/job-board/CharlesNWyble-Resume.doc"
 
-ClientSubmissionMarkdownOutputFile="$BUILD_OUTPUT_DIR/client-submission/Resume.md"
-ClientSubmissionPDFOutputFile="$BUILD_OUTPUT_DIR/client-submission//Resume.pdf"
-ClientSubmissionMSWordOutputFile="$BUILD_OUTPUT_DIR/client-submission/Resume.doc"
+ClientSubmissionMarkdownOutputFile="$BUILD_TEMP_DIR/ClientSubmit-Resume.md"
+ClientSubmissionPDFOutputFile="$BUILD_OUTPUT_DIR/client-submit/CharlesNWyble-Resume.pdf"
+ClientSubmissionMSWordOutputFile="$BUILD_OUTPUT_DIR/client-submit/CharlesNWyble-Resume.doc"
 
 echo "Cleaning up from previous runs..."
 
