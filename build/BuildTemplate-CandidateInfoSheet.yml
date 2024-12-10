@@ -1,6 +1,8 @@
-title: "{{CandidateName}} Resume"
+title: "{{CandidateName}} Candidate Information Sheet"
 titlepage: true
 titlepage-logo: "{{CandidateLogo}}"
+toc: true
+toc-own-page: true
 date: \today
 header-left: "\\hspace{1cm}"
 header-center: "\\leftmark"
